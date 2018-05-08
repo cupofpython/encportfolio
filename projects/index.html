@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script src="jquery-ui.min.js"></script>
+		<script> 
+			$(document).ready(function() {
+				$("#p1Content").hide(); 
+				$("#p2Content").hide();
+
+    			$("#p1Nav").click(function(){
+        		$("#p1Content").slideToggle("slow");
+        		});
+    			$("#p2Nav").click(function(){
+        		$("#p2Content").slideToggle("slow");
+    		});
+		});
+	</script>
+	<title>Aspiring Technical Communicator | Computer Science Student</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/projects.css">
+	<link rel="icon" href="../images/favicon.jpg">
+</head>
+<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+        		<li><a href="/projects">Projects</a></li>
+				<li><a href="/contact">Contact</a></li>
+    		</ul>
+		</nav>
+
+		<div id="p1Nav">
+			<div class="title">
+				<h1>Sarah Holland Portfolio Design</h1>
+			</div>
+		</div>
+		<div id="p1Content">
+			<div class="content">
+				<a href ="https://invis.io/QBGEBRZG8VH"> 
+					<img src ="../images/SarahHomeScreen.jpg" height ="512px" width ="720px" style="margin-bottom:20px">
+				</a>
+				<p>For my ENC 4215 Client-Based Project I designed an e-portfolio for Sarah Holland, an award-winning playwright, filmmaker, and popular YouTuber. I worked with my client on establishing a personal brand and designing the website based on client's needs. I used Sketch and InVision to bring client's design ideas to life. </p>
+			</div>
+		</div>
+
+		<div id="p2Nav">
+			<div class="title">
+				<h1>Sam & Son Realty Business Card and Letterhead Design</h1>
+			</div>
+		</div>
+		<script>
+		$("front").position({
+    my:        "left bottom",
+    at:        "right top",
+    of:        $("#back"), // or $("#otherdiv")
+    collision: "fit"
+}); </script>
+		<div id="p2Content">
+			<div class="content">
+				<div id="front">
+					<img src ="../images/CardFront.png" height ="238.4px" width ="419.2px" style="float:left; margin-top:30px; margin-bottom:10px;">
+				</div>
+				<div id="back">
+					<img src ="../images/CardBack.png" height ="238.4px" width ="419.2px" style="float:left; margin-top:30px; margin-bottom:10px">
+				</div>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aspiring Technical Communicator | Computer Science Student</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/contact.css">
+	<link rel="icon" href="../images/favicon.jpg">
+</head>
+<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+        		<li><a href="/projects">Projects</a></li>
+				<li><a href="/contact">Contact</a></li>
+    		</ul>
+		</nav>
+
+		<div class="title">
+			<h1> Contact </h1>
+		</div>
+
+
+<img src = "../images/Pumpkins.JPG" height="459px" width="612px" style="float:right;">
+<div class="content">
+    <p style="float:left;margin-top:10%;width:30%">Enter your name, email, and message, and I will be sure to respond to your requests or questions.</p>
+</div>
+<div style="clear:left"></div>
+<form id="contactform" method="POST">
+    <input type="text" name="name" placeholder="Name" style="float:left;">
+    <div style="clear:left"></div>
+    <input type="email" name="_replyto" placeholder="Email" style="float:left;">
+    <div style="clear:left"></div>
+    <input type="hidden" name="_subject" value="Contact Form Submission"/>
+    <textarea name="message" placeholder="Message" style="float:left;width:30%;"></textarea>
+    <div style="clear:left"></div>
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="submit" value="Send">
+</form>
+<script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'smorris1519' + '@' + 'gmail' + '.' + 'com');
+</script>
+
+
+
+</body>
+</html>
